@@ -1,0 +1,67 @@
+@import '~@nativescript/theme/css/core';
+@import '~@nativescript/theme/css/default';
+@import './theme/colors';
+@import '~@nativescript/theme/index';
+
+ActionBar {
+  background-color: $primary;
+  color: white;
+}
+
+.form {
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  .input-field {
+    width: 80%;
+
+    .label {
+      color: $primary;
+      font-weight: bold;
+      font-family: 'Oswald', 'Oswald Regular', 'Oswald-Bold';
+    }
+    .label.invalid {
+      color: red;
+    }
+
+    .input {
+      border-bottom-width: 2;
+      border-bottom-color: $primary;
+      width: 100%;
+    }
+
+  }
+}
+
+.h1 {
+  font-weight: bold;
+  color: $primary;
+  font-family: 'Oswald', 'Oswald Regular', 'Oswald-Bold';
+}
+
+.form-control {
+  border-bottom-color: $secondary;
+  border-bottom-width: 2;
+  margin: 5 0;
+  font-size: 16;
+  padding: 8 4;
+}
+
+.drawer-container {
+  margin-top: 23;
+  background: linear-gradient(140deg, $secondary, $primary);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20;
+}
+
+.fa {
+  font-family: 'FontAwesome';
+}
+
+.ng-invalid.ng-touched {
+  border-bottom-color: red;
+  color: red;
+}

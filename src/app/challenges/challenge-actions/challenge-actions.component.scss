@@ -1,0 +1,38 @@
+@import "../../../theme/colors";
+
+FlexboxLayout {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    Button {
+        width: 300;
+        &.-success {
+            background: $success;
+            border-color: $success;
+            color: white;
+        }
+
+        &.-fail {
+            background: $fail;
+            border-color: $fail;
+            color: white;
+        }
+    }
+}
+
+.animate-button-up {
+    animation-name: slide-up;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(7);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

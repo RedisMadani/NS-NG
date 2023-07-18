@@ -1,0 +1,41 @@
+<FlexboxLayout>
+  <StackLayout>
+    <Button
+      class="-success -rounded-lg"
+      text="Complete"
+      (tap)="onAction('complete')"
+      [isEnabled]="!done"
+      *ngIf="action !== 'complete'"
+    ></Button>
+    <Button
+      height="50"
+      fontSize="28"
+      class="fa -success -rounded-lg animate-button-up"
+      text="&#xf00c;"
+      *ngIf="action === 'complete'"
+    ></Button>
+  </StackLayout>
+  <StackLayout>
+    <Button
+      class="-fail -rounded-lg"
+      text="Failed"
+      (tap)="onAction('fail')"
+      [isEnabled]="!done"
+      *ngIf="action !== 'fail'"
+    ></Button>
+    <Button
+      height="50"
+      fontSize="28"
+      class="fa -fail -rounded-lg animate-button-up"
+      text="&#xf00d;"
+      *ngIf="action === 'fail'"
+    ></Button>
+  </StackLayout>
+  <StackLayout>
+    <Button
+      class="-outline -rounded-lg"
+      [text]="cancelText"
+      (tap)="onAction('cancel')"
+    ></Button>
+  </StackLayout>
+</FlexboxLayout>
