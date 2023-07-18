@@ -14,8 +14,11 @@ This repository contains an Android app that provides various challenges for use
 ## Screenshots
 
 ![Screenshot 1](screenshot-1.png)
+
 ![Screenshot 2](screenshot-2.png)
+
 ![Screenshot 3](screenshot-3.png)
+
 ![Screenshot 4](screenshot-4.png)
 
 ## Getting Started
